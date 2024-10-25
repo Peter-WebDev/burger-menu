@@ -20,8 +20,26 @@ header {
     background: light-dark(hsl(0, 0%, 85%), hsl(0, 0%, 15%));
 }
 
+header, main {
+    padding: 1rem;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    font-style: italic;
+    vertical-align: middle;
+}
+
 h1 {
     font-size: clamp(1.75rem, 1.3152rem + 2.1739vw, 3rem);
+}
+
+ul:where(.nav__list),
+li:where(.nav__item) {
+    margin: 0;
+    padding: 0;
 }
 
 .nav__list {
@@ -36,9 +54,22 @@ h1 {
     text-transform: uppercase;
 }
 
+.nav__link:hover,
+.nav__link:focus {
+    text-decoration: underline;
+}
+
+.nav__toggle {
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    color: hsl(0, 0%, 90%);
+    border: none;
+}
+
 .burger {
     width: 50%;
-    position: relative;
   }
   
   .burger,
@@ -47,7 +78,7 @@ h1 {
     display: block;
     margin: 0 auto;
     height: 3px;
-    background-color: var(--clr-neutral-100);
+    background-color: hsl(0, 0%, 90%);
   }
   
   .burger::before,
