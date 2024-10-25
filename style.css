@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+html {
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+
+header {
+    background: hsl(0, 0%, 20%);
+}
+
+.nav__list {
+    
+}
+
+.burger {
+    width: 50%;
+    position: relative;
+  }
+  
+  .burger,
+  .burger::before,
+  .burger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--clr-neutral-100);
+  }
+  
+  .burger::before,
+  .burger::after {
+    content: '';
+    width: 100%;
+  }
+  
+  .burger::before {
+    transform: translateY(-6px);
+  }
+  
+  .burger::after {
+    transform: translateY(3px);
+  }
