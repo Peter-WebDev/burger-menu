@@ -4,6 +4,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -16,20 +17,21 @@ body {
     font-family: system-ui;
 }
 
-header {
+.header {
     background: light-dark(hsl(0, 0%, 85%), hsl(0, 0%, 15%));
+    position: sticky;
+    top: 0;
+    overflow-y: hidden;
+    min-height: auto;
+    transition: min-height 200ms;
 }
 
-header, main {
+.header-open {
+    min-height: 100svh;
+}
+
+.header, main {
     padding: 1rem;
-}
-
-img, svg {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    font-style: italic;
-    vertical-align: middle;
 }
 
 h1 {
