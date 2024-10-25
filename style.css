@@ -1,3 +1,8 @@
+:root {
+    font-size: clamp(100%, 90% + 0.5vi, 150%);
+    color-scheme: dark light;
+}
+
 * {
     margin: 0;
 }
@@ -7,12 +12,28 @@ html {
     text-wrap: pretty;
 }
 
+body {
+    font-family: system-ui;
+}
+
 header {
-    background: hsl(0, 0%, 20%);
+
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1.3152rem + 2.1739vw, 3rem);
 }
 
 .nav__list {
-    
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav__link {
+    color: light-dark(hsl(0, 0%, 10%), hsl(0, 0%, 90%));
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .burger {
