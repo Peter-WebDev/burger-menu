@@ -8,12 +8,13 @@ function main() {
 
 /** Setup Eventlisteners for Toggle-functions */
 function setupEventListerners() {
-    navToggle.onclick = toggleMenu;
+    burgerMenu.onclick = toggleHeaderOpen;
 }
 
 /** Toggle header open close */
-function toggleMenu() {
-    const navToggle = document.querySelector('.nav__toggle');
-    const navPrimary = document.querySelector('.nav__primary')
-    navPrimary.classList.toggle('header-open');
+function toggleHeaderOpen() {
+    const header = document.getElementById("header");
+    const nav = document.querySelector(".nav__primary");
+    header.classList.toggle("headerOpen");
+    nav.classList.toggle("nav--visible");
 };
