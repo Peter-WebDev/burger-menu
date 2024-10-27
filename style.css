@@ -8,6 +8,12 @@
     margin: 0;
 }
 
+ul:where(.nav__list),
+li:where(.nav__item) {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     line-height: 1.5;
     text-wrap: pretty;
@@ -17,36 +23,37 @@ body {
     font-family: system-ui;
 }
 
-.header {
-    background: light-dark(hsl(0, 0%, 85%), hsl(0, 0%, 15%));
-    position: sticky;
-    top: 0;
-    overflow-y: hidden;
-    min-height: auto;
-    transition: min-height 200ms;
-}
-
-.header-open {
-    min-height: 100svh;
+h1 {
+    font-size: clamp(1.75rem, 1.3152rem + 2.1739vw, 3rem);
 }
 
 .header, main {
     padding: 1rem;
 }
 
-h1 {
-    font-size: clamp(1.75rem, 1.3152rem + 2.1739vw, 3rem);
+.header {
+    background: light-dark(hsl(0, 0%, 85%), hsl(0, 0%, 15%));
+    position: sticky;
+    top: 0;
+    min-height: auto;
 }
 
-ul:where(.nav__list),
-li:where(.nav__item) {
-    margin: 0;
-    padding: 0;
+.nav__primary {
+    visibility: hidden;
+}
+
+.header-open {
+    min-height: 100svh;
+    background-color: aqua;
+    visibility: visible;
+    overflow-y: hidden;
 }
 
 .nav__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
@@ -69,21 +76,19 @@ li:where(.nav__item) {
     padding: 0;
     color: hsl(0, 0%, 90%);
     outline: 2px solid hsl(0, 0%, 10%);
-    position: relative;
-    left: 0;
 }
 
 .nav__toggle:hover,
 .nav__toggle:focus-visible {
-  background: none;
-  color: limegreen;
-  outline: 2px solid limegreen;
+background: none;
+color: limegreen;
+outline: 2px solid limegreen;
 }
 
 .burger {
     width: 50%;
-  }
-  
+}
+
 .burger,
 .burger::before,
 .burger::after {
@@ -92,17 +97,21 @@ li:where(.nav__item) {
     height: 3px;
     background: hsl(0, 0%, 90%);
 }
-  
+
 .burger::before,
 .burger::after {
     content: '';
     width: 100%;
 }
-  
+
 .burger::before {
     transform: translateY(-6px);
 }
-  
+
 .burger::after {
     transform: translateY(3px);
+}
+
+@media screen and (min-width: 700px) {
+    
 }
