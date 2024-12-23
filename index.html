@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Burger menu" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
-</head>
-<body>
-    <header id="header" class="header">
+  </head>
+  <body>
+    <header class="header-background" id="header">
+      <div class="header-container page-width">
         <div class="header-top">
-            <button id="burgerMenu" class="nav__toggle" aria-label="Open navigation">
-                <span class="burger"></span>
-            </button>
-            <h1>I love code</h1>
+          <button
+            id="burgerMenu"
+            class="nav__toggle"
+            aria-label="Open navigation">
+            <span class="burger"></span>
+          </button>
+          <h2 id="header-title"><a href="#home">I love code</a></h2>
         </div>
         <nav class="nav__primary" aria-label="primary">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
-    <main class="main">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus laudantium qui maiores fugit quos suscipit. Placeat cumque eveniet neque! Adipisci inventore voluptate cupiditate delectus. Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores et? Corporis, vero.</p>
+    <main class="main page-width">
+      <section class="section hero" id="home">
+        <h1 id="page-title">
+          Finding the one semicolon that decided to go on vacation.
+        </h1>
+      </section>
+      <section class="section home" id="work">
+        <h2>Work</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum
+          laborum voluptas! Rerum, voluptatum. Explicabo natus maxime
+          perferendis laudantium! Itaque animi dolore incidunt omnis dolores,
+          soluta facere similique nihil eos architecto doloribus esse voluptate
+          at, quasi nam earum ad possimus inventore exercitationem repellat rem
+          non a. Provident atque alias minima mollitia. Quibusdam, aut adipisci
+          odio dolorem blanditiis tempore? Eveniet corporis id voluptatem
+          officia esse dolorem facilis perferendis magnam libero doloremque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          delectus laudantium qui maiores fugit quos suscipit. Placeat cumque
+          eveniet neque! Adipisci inventore voluptate cupiditate delectus.
+          Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores
+          et? Corporis, vero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit
+          aspernatur vero explicabo aperiam dignissimos, saepe temporibus qui
+          similique iure dicta dolorem placeat facere atque totam consequatur
+          tenetur quia numquam ipsa corrupti error quos odio. Totam cumque
+          dolores earum illo eaque doloribus vel quas laboriosam magni
+          repellendus quo inventore, a quod error exercitationem blanditiis
+          consectetur adipisci! Unde soluta exercitationem rerum.
+        </p>
+      </section>
+      <section class="section about" id="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut est ipsum
+          deserunt hic soluta eveniet quis eius quia? Mollitia assumenda
+          suscipit veritatis fuga explicabo architecto voluptatibus nihil
+          inventore cupiditate ratione.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          recusandae, repellendus veritatis iusto, minus et voluptatum facilis
+          voluptatem eos a non hic consectetur necessitatibus doloribus
+          molestiae alias! Cupiditate mollitia repellendus maiores quod velit
+          voluptate in eaque cumque, veritatis magnam alias totam, laudantium
+          voluptas eveniet, quae maxime veniam placeat exercitationem odit
+          quibusdam et impedit molestiae at. Vel asperiores doloribus harum
+          culpa?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          delectus laudantium qui maiores fugit quos suscipit. Placeat cumque
+          eveniet neque! Adipisci inventore voluptate cupiditate delectus.
+          Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores
+          et? Corporis, vero.
+        </p>
+      </section>
+      <section class="section contact" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum
+          laborum voluptas! Rerum, voluptatum. Explicabo natus maxime
+          perferendis laudantium! Itaque animi dolore incidunt omnis dolores,
+          soluta facere similique nihil eos architecto doloribus esse voluptate
+          at, quasi nam earum ad possimus inventore exercitationem repellat rem
+          non a. Provident atque alias minima mollitia. Quibusdam, aut adipisci
+          odio dolorem blanditiis tempore? Eveniet corporis id voluptatem
+          officia esse dolorem facilis perferendis magnam libero doloremque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          delectus laudantium qui maiores fugit quos suscipit. Placeat cumque
+          eveniet neque! Adipisci inventore voluptate cupiditate delectus.
+          Maxime modi tenetur nisi, in eum, quam eaque esse optio nulla maiores
+          et? Corporis, vero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit
+          aspernatur vero explicabo aperiam dignissimos, saepe temporibus qui
+          similique iure dicta dolorem placeat facere atque totam consequatur
+          tenetur quia numquam ipsa corrupti error quos odio. Totam cumque
+          dolores earum illo eaque doloribus vel quas laboriosam magni
+          repellendus quo inventore, a quod error exercitationem blanditiis
+          consectetur adipisci! Unde soluta exercitationem rerum.
+        </p>
+      </section>
     </main>
-</body>
+  </body>
 </html>
