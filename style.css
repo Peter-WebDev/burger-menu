@@ -3,7 +3,7 @@
   line-height: 1.35;
   color-scheme: dark light;
 
-  --color-brand: crimson;
+  --color-brand: hsl(348, 83%, 47%);
   --color-light: hsl(0, 0%, 85%);
   --color-dark: hsl(0, 0%, 10%);
 
@@ -74,7 +74,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-xl);
 }
 
 p + p {
